@@ -12,7 +12,8 @@ public class ApplicationsFacade {
     @GET
     @Produces("application/json")
     public Application getAll() {
-        return new Application("Hello");
+        Application application = new Application("Hello");
+        return application;
     }
 
     @GET

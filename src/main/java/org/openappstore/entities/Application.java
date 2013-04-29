@@ -1,20 +1,15 @@
 package org.openappstore.entities;
 
+import lombok.Data;
 
+@Data
 public class Application {
-
-    public String getName() {
-        return name;
-    }
-    public String name;
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public Application(String name) {
         this.name = name;
-
     }
+
+    private String name;
+
 
 }
